@@ -1,0 +1,3 @@
+# Ignore Root authentication file
+.root-auth
+sandbox/output/*

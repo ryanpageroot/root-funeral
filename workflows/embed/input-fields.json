@@ -1,0 +1,337 @@
+{
+  "management": {
+    "beneficiaries": {
+      "city": {
+        "label": "City",
+        "prefillAction": "none"
+      },
+      "email": {
+        "label": "Email address",
+        "prefillAction": "none"
+      },
+      "title": {
+        "label": "Title",
+        "prefillAction": "none"
+      },
+      "gender": {
+        "label": "Gender",
+        "prefillAction": "none"
+      },
+      "idType": {
+        "label": "Identification type",
+        "prefillAction": "none"
+      },
+      "suburb": {
+        "label": "Suburb",
+        "prefillAction": "none"
+      },
+      "country": {
+        "label": "Country",
+        "prefillAction": "none"
+      },
+      "areaCode": {
+        "label": "Area code",
+        "prefillAction": "none"
+      },
+      "lastName": {
+        "label": "Surname",
+        "prefillAction": "none"
+      },
+      "cellphone": {
+        "label": "Mobile number",
+        "prefillAction": "none"
+      },
+      "firstName": {
+        "label": "Name",
+        "prefillAction": "none"
+      },
+      "dateOfBirth": {
+        "label": "Date of birth",
+        "prefillAction": "none"
+      },
+      "addressLine1": {
+        "label": "Address line 1",
+        "prefillAction": "none"
+      },
+      "addressLine2": {
+        "label": "Address line 2",
+        "prefillAction": "none"
+      },
+      "relationship": {
+        "label": "Relationship",
+        "prefillAction": "none"
+      },
+      "identificationNumber": {
+        "label": "{{selected_identification_type}} number",
+        "prefillAction": "none"
+      },
+      "identificationCountry": {
+        "label": "Country",
+        "prefillAction": "none"
+      }
+    },
+    "personalDetails": {
+      "city": {
+        "label": "What is your city?",
+        "prefillAction": "none"
+      },
+      "email": {
+        "label": "What is your email address?",
+        "prefillAction": "none"
+      },
+      "gender": {
+        "label": "What is your gender?",
+        "prefillAction": "none"
+      },
+      "idType": {
+        "label": "Choose an identification type:",
+        "prefillAction": "none"
+      },
+      "suburb": {
+        "label": "What is your suburb?",
+        "prefillAction": "none"
+      },
+      "country": {
+        "label": "What is your country?",
+        "prefillAction": "none"
+      },
+      "areaCode": {
+        "label": "What is your area code?",
+        "prefillAction": "none"
+      },
+      "lastName": {
+        "label": "What is your surname?",
+        "prefillAction": "none"
+      },
+      "cellphone": {
+        "label": "What is your mobile number?",
+        "prefillAction": "none"
+      },
+      "firstName": {
+        "label": "What is your first name?",
+        "prefillAction": "none"
+      },
+      "companyName": {
+        "label": "What is your company's name?",
+        "prefillAction": "none"
+      },
+      "dateOfBirth": {
+        "label": "What is your date of birth?",
+        "prefillAction": "none"
+      },
+      "addressLine1": {
+        "label": "Address line 1.",
+        "prefillAction": "none"
+      },
+      "addressLine2": {
+        "label": "Address line 2.",
+        "prefillAction": "none"
+      },
+      "addressOptIn": {
+        "label": "Would you like to add your physical address?",
+        "prefillAction": "none"
+      },
+      "contactPosition": {
+        "label": "What is your position?",
+        "prefillAction": "none"
+      },
+      "policyholderType": {
+        "label": "Are you an individual or a company?",
+        "prefillAction": "none"
+      },
+      "companyWebsiteUrl": {
+        "label": "What is your company website url?",
+        "prefillAction": "none"
+      },
+      "registrationNumber": {
+        "label": "What is your company registration number?",
+        "prefillAction": "none"
+      },
+      "dateOfEstablishment": {
+        "label": "When was the company established?",
+        "prefillAction": "none"
+      },
+      "subsidiaryCompanies": {
+        "label": "Please list your subsidiary companies?",
+        "prefillAction": "none"
+      },
+      "fetchifyAutocomplete": {
+        "label": "Add your physical address",
+        "prefillAction": "none"
+      },
+      "identificationNumber": {
+        "label": "What is your {{selected_identification_type}} number?",
+        "prefillAction": "none"
+      },
+      "identificationCountry": {
+        "label": "What country is your {{selected_identification_type}} from?",
+        "prefillAction": "none"
+      },
+      "googlePlacesAutocomplete": {
+        "label": "Add your physical address"
+      },
+      "identificationExpirationDate": {
+        "label": "What is the expiration date on your {{selected_identification_type}}?",
+        "prefillAction": "none"
+      }
+    }
+  },
+  "beneficiaries": {
+    "city": {
+      "label": "City"
+    },
+    "email": {
+      "label": "Email address"
+    },
+    "title": {
+      "label": "Title"
+    },
+    "gender": {
+      "label": "Gender"
+    },
+    "idType": {
+      "label": "Identification type"
+    },
+    "suburb": {
+      "label": "Suburb"
+    },
+    "country": {
+      "label": "Country"
+    },
+    "areaCode": {
+      "label": "Area code"
+    },
+    "lastName": {
+      "label": "Surname"
+    },
+    "cellphone": {
+      "label": "Mobile number"
+    },
+    "firstName": {
+      "label": "Name"
+    },
+    "dateOfBirth": {
+      "label": "Date of birth"
+    },
+    "addressLine1": {
+      "label": "Address line 1"
+    },
+    "addressLine2": {
+      "label": "Address line 2"
+    },
+    "relationship": {
+      "label": "Relationship"
+    },
+    "identificationNumber": {
+      "label": "{{selected_identification_type}} number"
+    },
+    "identificationCountry": {
+      "label": "Country"
+    }
+  },
+  "personalDetails": {
+    "city": {
+      "label": "What is your city?",
+      "prefillAction": "none"
+    },
+    "email": {
+      "label": "What is your email address?",
+      "prefillAction": "none"
+    },
+    "gender": {
+      "label": "What is your gender?",
+      "prefillAction": "hidden"
+    },
+    "idType": {
+      "label": "Choose an identification type:",
+      "prefillAction": "none"
+    },
+    "suburb": {
+      "label": "What is your suburb?",
+      "prefillAction": "none"
+    },
+    "country": {
+      "label": "What is your country?",
+      "prefillAction": "none"
+    },
+    "areaCode": {
+      "label": "What is your area code?",
+      "prefillAction": "none"
+    },
+    "lastName": {
+      "label": "What is your surname?",
+      "prefillAction": "hidden"
+    },
+    "cellphone": {
+      "label": "What is your mobile number?",
+      "prefillAction": "none"
+    },
+    "firstName": {
+      "label": "What is your first name?",
+      "prefillAction": "hidden"
+    },
+    "companyName": {
+      "label": "What is your company's name?",
+      "prefillAction": "hidden"
+    },
+    "dateOfBirth": {
+      "label": "What is your date of birth?",
+      "prefillAction": "none"
+    },
+    "addressLine1": {
+      "label": "Address line 1.",
+      "prefillAction": "none"
+    },
+    "addressLine2": {
+      "label": "Address line 2.",
+      "prefillAction": "none"
+    },
+    "addressOptIn": {
+      "label": "Would you like to add your physical address?",
+      "prefillAction": "none"
+    },
+    "contactPosition": {
+      "label": "What is your position?",
+      "prefillAction": "none"
+    },
+    "policyholderType": {
+      "label": "Are you an individual or a company?",
+      "prefillAction": "none"
+    },
+    "companyWebsiteUrl": {
+      "label": "What is your company website url?",
+      "prefillAction": "none"
+    },
+    "registrationNumber": {
+      "label": "What is your company registration number?",
+      "prefillAction": "none"
+    },
+    "dateOfEstablishment": {
+      "label": "When was the company established?",
+      "prefillAction": "none"
+    },
+    "subsidiaryCompanies": {
+      "label": "Please list your subsidiary companies?",
+      "prefillAction": "none"
+    },
+    "fetchifyAutocomplete": {
+      "label": "Add your physical address",
+      "prefillAction": "none"
+    },
+    "identificationNumber": {
+      "label": "What is your {{selected_identification_type}} number?",
+      "prefillAction": "none"
+    },
+    "identificationCountry": {
+      "label": "What country is your {{selected_identification_type}} from?",
+      "prefillAction": "none"
+    },
+    "googlePlacesAutocomplete": {
+      "label": "Add your physical address"
+    },
+    "identificationExpirationDate": {
+      "label": "What is the expiration date on your {{selected_identification_type}}?",
+      "prefillAction": "none"
+    }
+  }
+}
