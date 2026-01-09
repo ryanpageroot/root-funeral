@@ -1,0 +1,154 @@
+[
+  {
+    "key": "main_member_heading",
+    "type": "section-header",
+    "label": "Main member",
+    "props": {
+      "fontWeight": "bold",
+      "headingTag": "h5"
+    }
+  },
+  {
+    "key": "cover_amount",
+    "type": "currency",
+    "label": "Cover amount *",
+    "props": {
+      "prefix": "R"
+    },
+    "validators": [
+      {
+        "validation": {
+          "type": "required"
+        }
+      },
+      {
+        "validation": {
+          "min": 0,
+          "type": "greaterThanCurrency"
+        }
+      },
+      {
+        "validation": {
+          "max": 10000000,
+          "type": "lessThanCurrency"
+        }
+      }
+    ]
+  },
+  {
+    "key": "age",
+    "type": "number",
+    "label": "Age *",
+    "validators": [
+      {
+        "validation": {
+          "type": "required"
+        }
+      },
+      {
+        "validation": {
+          "min": 18,
+          "type": "greaterThanNumber"
+        }
+      },
+      {
+        "validation": {
+          "max": 70,
+          "type": "lessThanNumber"
+        }
+      }
+    ]
+  },
+  {
+    "key": "children_included",
+    "type": "checkbox",
+    "label": "Include children",
+    "validators": [
+      {
+        "validation": {
+          "type": "required"
+        }
+      }
+    ],
+    "defaultValue": false
+  },
+  {
+    "type": "list",
+    "label": "List",
+    "maxNumber": 20,
+    "components": [
+      {
+        "key": "children-list-section-header",
+        "type": "section-header",
+        "label": "Details of child",
+        "props": {
+          "headingTag": "h5",
+          "indexNumber": true
+        }
+      },
+      {
+        "key": "first_name",
+        "type": "text",
+        "label": "First name *",
+        "outputPath": "children",
+        "validators": [
+          {
+            "validation": {
+              "type": "required"
+            }
+          }
+        ]
+      },
+      {
+        "key": "last_name",
+        "type": "text",
+        "label": "Last name *",
+        "outputPath": "children",
+        "validators": [
+          {
+            "validation": {
+              "type": "required"
+            }
+          }
+        ]
+      },
+      {
+        "key": "date_of_birth",
+        "type": "date-picker",
+        "label": "Date of birth *",
+        "outputPath": "children",
+        "validators": [
+          {
+            "validation": {
+              "type": "required"
+            }
+          }
+        ]
+      }
+    ],
+    "outputPathList": "children",
+    "displayConditions": [
+      {
+        "path": "children_included",
+        "value": true,
+        "condition": "==="
+      }
+    ]
+  },
+  {
+    "key": "deceased_gender",
+    "type": "select",
+    "label": "Gender",
+    "options": [
+      {
+        "label": "Male",
+        "value": "male"
+      },
+      {
+        "label": "Female",
+        "value": "female"
+      }
+    ],
+    "outputPath": "gender"
+  }
+]

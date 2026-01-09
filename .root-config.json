@@ -1,0 +1,263 @@
+{
+  "$schema": "http://sandbox.root.localhost:4000/v1/cli/json-schemas/root-config",
+  "productModuleName": "Root Funeral",
+  "productModuleKey": "root_funeral",
+  "organizationId": {
+    "str": "00000000-0000-0000-0000-000000000001"
+  },
+  "host": "http://sandbox.root.localhost:4000",
+  "codeFileOrder": [
+    "main.js"
+  ],
+  "settings": {
+    "policySchemeType": "individual",
+    "dashboardIssuingEnabled": true,
+    "activatePoliciesOnEvent": "payment_method_assigned",
+    "defaultStatus": "pending_initial_payment",
+    "canReactivatePolicies": true,
+    "notTakenUpEnabled": true,
+    "preventPolicyLapseAndNTU": true,
+    "welcomeLetterEnabled": false,
+    "policyDocuments": [
+      {
+        "type": "policy_schedule",
+        "fileName": "your_policy_schedule_{{policy.policy_number}}"
+      },
+      {
+        "type": "supplementary_terms",
+        "fileName": "custom_name_{{policy.policy_number}}",
+        "supplementaryTermsType": "client-conduct-terms"
+      }
+    ],
+    "canRequote": true,
+    "gracePeriod": {
+      "lapseOn": {
+        "afterFirstMissedPayment": {
+          "period": 15,
+          "periodType": "days"
+        },
+        "consecutiveMissedPayments": null,
+        "missedPaymentsOverPolicyTerm": null,
+        "missedPaymentsWithinPeriod": null
+      },
+      "lapseExclusionRules": {
+        "lapsePolicyWithProcessingPayment": false,
+        "arrearsThreshold": {
+          "enabled": false,
+          "thresholdInCents": "0"
+        }
+      }
+    },
+    "waitingPeriod": {
+      "applyTo": {
+        "theFullPolicy": {
+          "period": 30,
+          "periodType": "days"
+        }
+      }
+    },
+    "coolingOffPeriod": {
+      "applyTo": {
+        "theFullPolicy": {
+          "refundType": "all_premiums",
+          "period": 1,
+          "periodType": "months"
+        }
+      }
+    },
+    "policyAnniversaryNotification": {
+      "daysBeforeToSend": 20
+    },
+    "policyholder": {
+      "individualsAllowed": true,
+      "individualsIdAllowed": true,
+      "individualsPassportAllowed": true,
+      "individualsCellphoneAllowed": false,
+      "individualsCustomIdAllowed": true,
+      "individualsEmailAllowed": false,
+      "idCountry": "ZA",
+      "customIdName": "Custom identifier",
+      "companiesAllowed": false,
+      "individualPolicyholderFields": {
+        "gender": {
+          "hidden": true
+        },
+        "address": {
+          "suburb": {
+            "required": true
+          }
+        },
+        "dateOfBirth": {
+          "required": true
+        }
+      }
+    },
+    "beneficiaries": {
+      "makePolicyholderABeneficiary": true,
+      "min": 0,
+      "max": 10,
+      "individualBeneficiaryFields": {
+        "dateOfBirth": {
+          "required": false
+        },
+        "address": {
+          "displayAddress": true
+        }
+      }
+    },
+    "claims": {
+      "checklistItems": [
+        "Are all premiums up to date?",
+        "Is the incident date or date of death after the inception of cover?",
+        "Does the date of death fall outside of the waiting period? If no, was the insured covered under a similar policy prior to the commencement date?",
+        "Is the deceased`s identity and relationship to the main member confirmed as true and is the individual specifically covered under the policy?",
+        "Has the claim been logged within the permitted time period after the claim event?",
+        "No exclusions, as per the policy terms and conditions, apply on this claim.",
+        "Has the insured adhered to the terms and conditions, to the best of your knowledge?",
+        "Is the beneficiary correct in terms of the policy terms and conditions?",
+        "Are the beneficiaries` banking details loaded correctly",
+        "Have any other claims been logged for the policy?"
+      ],
+      "claimAssignmentMethod": "product_module",
+      "documentLabels": [
+        "Proof of claim"
+      ],
+      "enableClaimAssignments": true,
+      "enableLegacyClaimsSchema": true
+    },
+    "billing": {
+      "allowStartDateChange": true,
+      "billBeforeWeekendEnabled": true,
+      "billingFrequency": "monthly",
+      "consecutiveFailedPaymentsAllowed": 4,
+      "currency": "ZAR",
+      "enableBillingOnSandbox": true,
+      "paymentSubmissionLeadTime": 0,
+      "clientStatementReference": "Root",
+      "combineProRataAndPremium": {
+        "enabled": true,
+        "daysBeforeBilling": 5
+      },
+      "paymentMethodTypes": {
+        "debitOrders": {
+          "enabled": true,
+          "strategy": "best_effort",
+          "naedoPoliciesInArrears": true,
+          "assumeSuccess": {
+            "enabled": true,
+            "daysAfterPaymentDate": 5
+          }
+        },
+        "card": {
+          "enabled": false,
+          "assumeSuccess": {
+            "enabled": false
+          }
+        },
+        "eft": {
+          "enabled": false,
+          "assumeSuccess": {
+            "enabled": false
+          }
+        },
+        "external": {
+          "enabled": true,
+          "createPayments": false,
+          "assumeSuccess": {
+            "enabled": true,
+            "daysAfterPaymentDate": 5
+          }
+        },
+        "collectionModules": [
+          {
+            "key": "blank_starter_template"
+          }
+        ]
+      },
+      "retryFailedPayments": {
+        "enabled": true,
+        "daysBetweenRetries": 5,
+        "numberOfRetries": 1
+      },
+      "proRataBilling": {
+        "enabled": true,
+        "proRataBillingOnIssue": true,
+        "minimumAmount": 1000
+      },
+      "disableBillingDayAdjustments": {
+        "enabled": false
+      }
+    },
+    "coveredItems": {
+      "enabled": false,
+      "maxSumAssured": 0
+    },
+    "coveredPeople": {
+      "max": 10,
+      "min": 0,
+      "enabled": true
+    }
+  },
+  "alterationHooks": [
+    {
+      "key": "hook_1",
+      "name": "Hook 1"
+    }
+  ],
+  "scheduledFunctions": [
+    {
+      "functionName": "customScheduledFunction",
+      "policyStatuses": [
+        "active",
+        "pending_initial_payment"
+      ],
+      "frequency": {
+        "type": "daily",
+        "timeOfDay": "10:00"
+      }
+    },
+    {
+      "functionName": "processInstructions",
+      "policyStatuses": [
+        "active",
+        "pending_initial_payment"
+      ],
+      "frequency": {
+        "type": "daily",
+        "timeOfDay": "10:00"
+      }
+    }
+  ],
+  "fulfillmentTypes": [
+    {
+      "key": "cds_account",
+      "label": "CDS account",
+      "fulfillmentData": {
+        "cds_account": {
+          "label": "Settlement amount",
+          "isValue": true,
+          "valueType": "currency"
+        },
+        "cds_account_number": {
+          "label": "CDS account number",
+          "valueType": "string"
+        }
+      }
+    },
+    {
+      "key": "airtime",
+      "label": "Airtime",
+      "fulfillmentData": {
+        "airtime": {
+          "label": "Airtime amount",
+          "isValue": true,
+          "valueType": "currency"
+        },
+        "cellphone_number": {
+          "label": "Cellphone number",
+          "valueType": "string"
+        }
+      }
+    }
+  ]
+}

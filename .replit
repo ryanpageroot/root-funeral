@@ -1,0 +1,31 @@
+# Replit configuration for Root Funeral
+run = "node preview/server.js"
+language = "nodejs"
+disableGuessImports = true
+
+[nix]
+channel = "stable-24_05"
+
+[env]
+NODE_ENV = "development"
+
+[packager]
+language = "nodejs"
+
+[languages.javascript]
+pattern = "**/*.js"
+syntax = "javascript"
+
+[unitTest]
+language = "nodejs"
+
+[deployment]
+deploymentTarget = "static"
+publicDir = "preview"
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[agent]
+expertMode = true

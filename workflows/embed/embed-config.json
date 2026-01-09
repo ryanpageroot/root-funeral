@@ -1,0 +1,288 @@
+{
+  "quote": {
+    "links": {
+      "exitRedirect": "https://dinoparks.net/",
+      "supportEmail": "support@example.com"
+    },
+    "images": {},
+    "wording": {
+      "title": "Quote package",
+      "description": "Please complete the steps below to get a personalised quote. Let's dive right in!",
+      "coverRejected": "life cover",
+      "consentDisclaimer": {
+        "title": "Consent",
+        "consentItems": [
+          "Consent to Dinosure and Root collecting and processing your personal information to provide you with cover."
+        ]
+      },
+      "screeningQuestions": [
+        {
+          "key": "declined_cover",
+          "header": "In the last 5 years...",
+          "question": "Have you been declined or deferred cover by a life insurance company?"
+        },
+        {
+          "key": "admitted_hospital",
+          "header": "In the last 5 years...",
+          "question": "have you been admitted to a hospital or clinic for longer than 48 hours?"
+        }
+      ],
+      "screeningQuestionsRejected": "Our term life offering is unfortunately not the best solution for you.",
+      "screeningQuestionsDescription": "Before we begin, let’s make sure our term life offering is the correct cover solution for you."
+    },
+    "displayOptionalSections": {
+      "consentDisclaimer": true,
+      "screeningQuestions": true,
+      "screeningQuestionsRetry": true
+    }
+  },
+  "footer": {
+    "links": {},
+    "images": {
+      "disclaimerUrl": "https://storage.googleapis.com/root-production-public-client-images/Dinosure%20Demo/root-logo.svg"
+    },
+    "wording": {
+      "disclaimer": "Dinosure is a sample application by Root. The source code is MIT licensed, while the website content is licensed CC BY NC SA 4.0. Dinosure Services (Pty) Ltd is an unauthorised financial services provider. FSP number: 123456. 3 Sauropoda Lane, Isla Nublar, 1337"
+    },
+    "displayOptionalSections": {
+      "disclaimerImage": true
+    }
+  },
+  "header": {
+    "links": {},
+    "images": {
+      "titleUrl": ""
+    },
+    "wording": {
+      "title": "Get Dinosure"
+    },
+    "displayOptionalSections": {
+      "title": true,
+      "titleImage": false
+    }
+  },
+  "styles": {
+    "colors": {
+      "dark": "#00000",
+      "error": "#ff2b38",
+      "light": "#FFFFFF",
+      "border": "rgba(0, 0, 0, 0.125)",
+      "primary": "#240E8B",
+      "success": "#1fc881",
+      "warning": "#FC64B1",
+      "disabled": "#CDD4DE",
+      "highlight": "#FC64B1",
+      "backgroundHighlight": "rgba(245, 247, 252, 1)"
+    },
+    "fontSize": {
+      "body": "16px",
+      "title": "40px",
+      "button": "14px",
+      "subTitle": "22px",
+      "subscript": "8px"
+    },
+    "fontFamily": {
+      "body": "Lato",
+      "title": "Lato"
+    },
+    "borderRadius": {
+      "button": "8px"
+    }
+  },
+  "landing": {
+    "links": {
+      "youTubeVideoId": "PJlmYh27MHg"
+    },
+    "images": {
+      "background": "https://storage.googleapis.com/root-production-public-client-images/Dinosure%20Demo/dinosure-grey-background.svg"
+    },
+    "wording": {
+      "title": "Get Dinosure",
+      "subTitle": "From R149 p/m",
+      "videoTitle": "Dinosure Emergency Insurance",
+      "description": [
+        "Dinosure is a best of breed insurance scheme which not only provides life and disability insurance for dinosaurs attacks, but also provides the following services to prevent that eventuality from ever occurring:"
+      ],
+      "createQuoteButton": "Let's get started!",
+      "descriptionBullets": [
+        "Early warning network",
+        "Extraction team",
+        "Security consultants"
+      ]
+    },
+    "displayOptionalSections": {
+      "watchVideo": true,
+      "descriptionBullets": true,
+      "displayLandingPage": true
+    }
+  },
+  "payment": {
+    "links": {},
+    "images": {},
+    "wording": {
+      "title": "Payment",
+      "declaration": "Dinosure is a sample application by Root. The source code is MIT licensed, while the website content is licensed CC BY NC SA 4.0. Dinosure Services (Pty) Ltd is an unauthorised financial services provider. FSP number: 123456. 3 Sauropoda Lane, Isla Nublar, 1337",
+      "description": "Almost done! Please complete the payment below."
+    },
+    "displayOptionalSections": {
+      "billingDay": true,
+      "editBillingDay": true,
+      "displayPaymentMethod": true,
+      "displayPaymentDeclaration": true
+    }
+  },
+  "settings": {
+    "supportEmail": "support@dinosure.co.za",
+    "issuingFlowStartingStep": "default",
+    "defaultCountryCodeFromBrowser": false
+  },
+  "management": {
+    "claim": {
+      "links": {
+        "openClaim": "https://dinoparks.net/claims",
+        "exitRedirect": ""
+      },
+      "images": {},
+      "wording": {
+        "title": "Create claim",
+        "description": "Want to make a claim?",
+        "callToAction": "Fill out our online form...",
+        "contactNumber": "013 456 7890"
+      },
+      "displayOptionalSections": {}
+    },
+    "payment": {
+      "links": {
+        "exitRedirect": ""
+      },
+      "images": {},
+      "wording": {
+        "title": "Payment summary",
+        "description": "Please complete your payment details"
+      },
+      "displayOptionalSections": {
+        "editBillingDay": true,
+        "editPaymentMethod": true,
+        "viewPaymentMethod": true
+      }
+    },
+    "policyView": {
+      "links": {
+        "exitRedirect": "https://dinoparks.net/"
+      },
+      "images": {},
+      "wording": {
+        "title": "Policy view",
+        "description": "Policy view description",
+        "contactNumber": "0823015589",
+        "contactDescription": "Please reach us at"
+      },
+      "displayOptionalSections": {
+        "contactNumber": true
+      }
+    },
+    "beneficiaries": {
+      "links": {
+        "exitRedirect": ""
+      },
+      "images": {},
+      "wording": {
+        "title": "Dinoparks helps protect your loved ones"
+      },
+      "displayOptionalSections": {}
+    },
+    "policyDetails": {
+      "links": {
+        "exitRedirect": "https://dinoparks.net/"
+      },
+      "images": {},
+      "wording": {
+        "title": "Policy details",
+        "description": "These are your policy details"
+      },
+      "displayOptionalSections": {
+        "alterationHooks": [
+          {
+            "key": "hook_1",
+            "enabled": true
+          }
+        ]
+      }
+    }
+  },
+  "application": {
+    "links": {},
+    "images": {},
+    "wording": {
+      "title": "Additional details",
+      "description": "Please complete the additional details steps below."
+    },
+    "displayOptionalSections": {}
+  },
+  "confirmation": {
+    "links": {
+      "openClaim": "https://dinoparks.net/claims",
+      "redirectOnCompletedUrl": "https://dinoparks.net/"
+    },
+    "images": {},
+    "wording": {
+      "title": "Confirmation",
+      "subTitle": "Thank you for taking out insurance with us.",
+      "description": "You are now covered and your policy schedule should arrive in your inbox shortly.",
+      "contactNumber": "013 456 7890"
+    },
+    "displayOptionalSections": {
+      "contactNumber": true,
+      "displayConfirmation": true
+    }
+  },
+  "beneficiaries": {
+    "links": {},
+    "images": {},
+    "wording": {
+      "title": "Dinosure helps protect your loved ones",
+      "description": "Let’s list them as your beneficiaries here. You can add up to 10 beneficiaries now. You’ll be able to change them or add more later."
+    },
+    "displayOptionalSections": {
+      "displayManageBeneficiaries": true
+    }
+  },
+  "personalDetails": {
+    "links": {},
+    "images": {},
+    "wording": {
+      "title": "Personal details",
+      "description": "Let's get to know you. Please complete your personal details below."
+    },
+    "displayOptionalSections": {
+      "skipOnPrefill": true
+    }
+  },
+  "prePaymentCompliance": {
+    "links": {
+      "exitRedirect": "https://dinoparks.net/"
+    },
+    "images": {},
+    "wording": {
+      "title": "Pre payment compliance",
+      "description": "Let’s sign you up! Read the following terms and conditions before proceeding..."
+    },
+    "displayOptionalSections": {
+      "displayPrePaymentCompliance": true
+    }
+  },
+  "policyIssuingIFrameUrl": "",
+  "prePersonalDetailsCompliance": {
+    "links": {
+      "exitRedirect": "https://dinoparks.net/"
+    },
+    "images": {},
+    "wording": {
+      "title": "Pre personal details compliance",
+      "description": "Let’s sign you up! Read the following terms and conditions before proceeding..."
+    },
+    "displayOptionalSections": {
+      "displayPrePersonalDetailsCompliance": true
+    }
+  }
+}

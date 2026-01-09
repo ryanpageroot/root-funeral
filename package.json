@@ -1,0 +1,8 @@
+{
+  "name": "root_funeral",
+  "version": "1.0.0",
+  "description": "Root Platform product module: root_funeral",
+  "scripts": {
+    "preview": "node preview/server.js"
+  }
+}

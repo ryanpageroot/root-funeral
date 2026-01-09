@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed Preview - Root Funeral</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { height: 100%; }
+        .header {
+            background: #f8f9fa;
+            padding: 8px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .header a {
+            color: #2969ff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: background 0.1s, color 0.1s;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .header a:hover {
+            background: rgba(41, 105, 255, 0.08);
+            color: #1a4cdb;
+        }
+        .header span {
+            color: #6c757d;
+            font-size: 13px;
+        }
+        iframe {
+            width: 100%;
+            height: calc(100% - 41px);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="/">← Back to Hub</a>
+        <span>Embed Preview (Draft Mode)</span>
+    </div>
+    <iframe src="http://localhost:4201/root_funeral?api_key=sandbox_NjA5YjUwYjEtYzlmNi00OGI5LWI1ZTQtZDVlYTU1NjZjM2MzLnRGNDJ0dVhYLW5TaGF3dmdFOXRTc0h3Y1NrZWZibFp5&draft_definition=true"></iframe>
+</body>
+</html>
